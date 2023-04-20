@@ -1,0 +1,601 @@
+ 1.How to compare two JSON have the same properties without order?
+     
+     a.let obj1 = { name."person 1,age:5"};
+     b.let obj2 = {age:5,name:"person 1"};
+
+   let result=true;
+   if(Object.keys(obj1).length==Object.keys(obj2).length)
+  {
+
+     for(key in obj1){
+
+  if(obj1[key] !== obj2[key]){result=false;
+  
+     break;
+    }
+  }
+ }
+ 
+ else{
+    result=false;
+  }
+ console.log(result);done
+
+
+ 2 & 3 ,Take print all countries & flags & populations in console (250) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, …]
+[0 … 99]
+[100 … 199]
+100
+: 
+altSpellings
+: 
+['HU']
+area
+: 
+93028
+borders
+: 
+(7) ['AUT', 'HRV', 'ROU', 'SRB', 'SVK', 'SVN', 'UKR']
+capital
+: 
+['Budapest']
+capitalInfo
+: 
+{latlng: Array(2)}
+car
+: 
+{signs: Array(1), side: 'right'}
+cca2
+: 
+"HU"
+cca3
+: 
+"HUN"
+ccn3
+: 
+"348"
+cioc
+: 
+"HUN"
+coatOfArms
+: 
+{png: 'https://mainfacts.com/media/images/coats_of_arms/hu.png', svg: 'https://mainfacts.com/media/images/coats_of_arms/hu.svg'}
+continents
+: 
+Array(1)
+0
+: 
+"Europe"
+length
+: 
+1
+[[Prototype]]
+: 
+Array(0)
+currencies
+: 
+{HUF: {…}}
+demonyms
+: 
+{eng: {…}, fra: {…}}
+fifa
+: 
+"HUN"
+flag
+: 
+"🇭🇺"
+flags
+: 
+{png: 'https://flagcdn.com/w320/hu.png', svg: 'https://flagcdn.com/hu.svg', alt: 'The flag of Hungary is composed of three equal horizontal bands of red, white and green.'}
+gini
+: 
+{2018: 29.6}
+idd
+: 
+{root: '+3', suffixes: Array(1)}
+independent
+: 
+true
+landlocked
+: 
+true
+languages
+: 
+{hun: 'Hungarian'}
+latlng
+: 
+(2) [47, 20]
+maps
+: 
+{googleMaps: 'https://goo.gl/maps/9gfPupm5bffixiFJ6', openStreetMaps: 'https://www.openstreetmap.org/relation/21335'}
+name
+: 
+{common: 'Hungary', official: 'Hungary', nativeName: {…}}
+population
+: 
+9749763
+postalCode
+: 
+{format: '####', regex: '^(\\d{4})$'}
+region
+: 
+"Europe"
+startOfWeek
+: 
+"monday"
+status
+: 
+"officially-assigned"
+subregion
+: 
+"Central Europe"
+timezones
+: 
+['UTC+01:00']
+tld
+: 
+['.hu']
+translations
+: 
+{ara: {…}, bre: {…}, ces: {…}, cym: {…}, deu: {…}, …}
+unMember
+: 
+true
+[[Prototype]]
+: 
+Object
+101
+: 
+{name: {…}, tld: Array(1), cca2: 'AS', ccn3: '016', cca3: 'ASM', …}
+102
+: 
+{name: {…}, tld: Array(1), cca2: 'TD', ccn3: '148', cca3: 'TCD', …}
+103
+: 
+{name: {…}, tld: Array(1), cca2: 'GP', ccn3: '312', cca3: 'GLP', …}
+104
+: 
+{name: {…}, tld: Array(1), cca2: 'NG', ccn3: '566', cca3: 'NGA', …}
+105
+: 
+{name: {…}, tld: Array(1), cca2: 'SM', ccn3: '674', cca3: 'SMR', …}
+106
+: 
+{name: {…}, tld: Array(2), cca2: 'UA', ccn3: '804', cca3: 'UKR', …}
+107
+: 
+{name: {…}, tld: Array(1), cca2: 'HT', ccn3: '332', cca3: 'HTI', …}
+108
+: 
+{name: {…}, tld: Array(1), cca2: 'BW', ccn3: '072', cca3: 'BWA', …}
+109
+: 
+{name: {…}, tld: Array(1), cca2: 'PT', ccn3: '620', cca3: 'PRT', …}
+110
+: 
+{name: {…}, tld: Array(1), cca2: 'GY', ccn3: '328', cca3: 'GUY', …}
+111
+: 
+{name: {…}, tld: Array(1), cca2: 'IE', ccn3: '372', cca3: 'IRL', …}
+112
+: 
+{name: {…}, tld: Array(1), cca2: 'NC', ccn3: '540', cca3: 'NCL', …}
+113
+: 
+{name: {…}, tld: Array(2), cca2: 'MF', ccn3: '663', cca3: 'MAF', …}
+114
+: 
+{name: {…}, tld: Array(1), cca2: 'MU', ccn3: '480', cca3: 'MUS', …}
+115
+: 
+{name: {…}, tld: Array(1), cca2: 'GI', ccn3: '292', cca3: 'GIB', …}
+116
+: 
+{name: {…}, tld: Array(1), cca2: 'KN', ccn3: '659', cca3: 'KNA', …}
+117
+: 
+{name: {…}, tld: Array(1), cca2: 'IS', ccn3: '352', cca3: 'ISL', …}
+118
+: 
+{name: {…}, tld: Array(1), cca2: 'SJ', ccn3: '744', cca3: 'SJM', …}
+119
+: 
+{name: {…}, tld: Array(1), cca2: 'CL', ccn3: '152', cca3: 'CHL', …}
+120
+: 
+{name: {…}, tld: Array(1), cca2: 'UM', ccn3: '581', cca3: 'UMI', …}
+121
+: 
+{name: {…}, tld: Array(2), cca2: 'KZ', ccn3: '398', cca3: 'KAZ', …}
+122
+: 
+{name: {…}, tld: Array(5), cca2: 'CN', ccn3: '156', cca3: 'CHN', …}
+123
+: 
+{name: {…}, tld: Array(1), cca2: 'MO', ccn3: '446', cca3: 'MAC', …}
+124
+: 
+{name: {…}, tld: Array(1), cca2: 'AM', ccn3: '051', cca3: 'ARM', …}
+125
+: 
+{name: {…}, tld: Array(1), cca2: 'BO', ccn3: '068', cca3: 'BOL', …}
+126
+: 
+{name: {…}, tld: Array(1), cca2: 'SD', ccn3: '729', cca3: 'SDN', …}
+127
+: 
+{name: {…}, tld: Array(1), cca2: 'VN', ccn3: '704', cca3: 'VNM', …}
+128
+: 
+{name: {…}, tld: Array(1), cca2: 'WF', ccn3: '876', cca3: 'WLF', …}
+129
+: 
+{name: {…}, tld: Array(1), cca2: 'BI', ccn3: '108', cca3: 'BDI', …}
+130
+: 
+{name: {…}, tld: Array(1), cca2: 'CA', ccn3: '124', cca3: 'CAN', …}
+131
+: 
+{name: {…}, tld: Array(1), cca2: 'CO', ccn3: '170', cca3: 'COL', …}
+132
+: 
+{name: {…}, tld: Array(1), cca2: 'LS', ccn3: '426', cca3: 'LSO', …}
+133
+: 
+{name: {…}, tld: Array(1), cca2: 'BM', ccn3: '060', cca3: 'BMU', …}
+134
+: 
+{name: {…}, tld: Array(1), cca2: 'GT', ccn3: '320', cca3: 'GTM', …}
+135
+: 
+{name: {…}, tld: Array(1), cca2: 'UZ', ccn3: '860', cca3: 'UZB', …}
+136
+: 
+{name: {…}, tld: Array(1), cca2: 'KY', ccn3: '136', cca3: 'CYM', …}
+137
+: 
+{name: {…}, tld: Array(1), cca2: 'SN', ccn3: '686', cca3: 'SEN', …}
+138
+: 
+{name: {…}, tld: Array(1), cca2: 'GM', ccn3: '270', cca3: 'GMB', …}
+139
+: 
+{name: {…}, tld: Array(1), cca2: 'LI', ccn3: '438', cca3: 'LIE', …}
+140
+: 
+{name: {…}, tld: Array(1), cca2: 'PN', ccn3: '612', cca3: 'PCN', …}
+141
+: 
+{name: {…}, tld: Array(1), cca2: 'TV', ccn3: '798', cca3: 'TUV', …}
+142
+: 
+{name: {…}, tld: Array(1), cca2: 'GQ', ccn3: '226', cca3: 'GNQ', …}
+143
+: 
+{name: {…}, tld: Array(1), cca2: 'BT', ccn3: '064', cca3: 'BTN', …}
+144
+: 
+{name: {…}, tld: Array(1), cca2: 'AW', ccn3: '533', cca3: 'ABW', …}
+145
+: 
+{name: {…}, tld: Array(1), cca2: 'PY', ccn3: '600', cca3: 'PRY', …}
+146
+: 
+{name: {…}, tld: Array(1), cca2: 'GD', ccn3: '308', cca3: 'GRD', …}
+147
+: 
+{name: {…}, tld: Array(1), cca2: 'PG', ccn3: '598', cca3: 'PNG', …}
+148
+: 
+{name: {…}, tld: Array(1), cca2: 'JM', ccn3: '388', cca3: 'JAM', …}
+149
+: 
+{name: {…}, tld: Array(1), cca2: 'CG', ccn3: '178', cca3: 'COG', …}
+150
+: 
+{name: {…}, tld: Array(1), cca2: 'PL', ccn3: '616', cca3: 'POL', …}
+151
+: 
+{name: {…}, tld: Array(3), cca2: 'RU', ccn3: '643', cca3: 'RUS', …}
+152
+: 
+{name: {…}, tld: Array(1), cca2: 'MR', ccn3: '478', cca3: 'MRT', …}
+153
+: 
+{name: {…}, tld: Array(1), cca2: 'EH', ccn3: '732', cca3: 'ESH', …}
+154
+: 
+{name: {…}, tld: Array(1), cca2: 'BF', ccn3: '854', cca3: 'BFA', …}
+155
+: 
+{name: {…}, tld: Array(1), cca2: 'CD', ccn3: '180', cca3: 'COD', …}
+156
+: 
+{name: {…}, tld: Array(1), cca2: 'BJ', ccn3: '204', cca3: 'BEN', …}
+157
+: 
+{name: {…}, tld: Array(1), cca2: 'UG', ccn3: '800', cca3: 'UGA', …}
+158
+: 
+{name: {…}, tld: Array(1), cca2: 'MN', ccn3: '496', cca3: 'MNG', …}
+159
+: 
+{name: {…}, tld: Array(1), cca2: 'LA', ccn3: '418', cca3: 'LAO', …}
+160
+: 
+{name: {…}, tld: Array(2), cca2: 'DZ', ccn3: '012', cca3: 'DZA', …}
+161
+: 
+{name: {…}, tld: Array(1), cca2: 'BN', ccn3: '096', cca3: 'BRN', …}
+162
+: 
+{name: {…}, tld: Array(1), cca2: 'KE', ccn3: '404', cca3: 'KEN', …}
+163
+: 
+{name: {…}, tld: Array(3), cca2: 'LK', ccn3: '144', cca3: 'LKA', …}
+164
+: 
+{name: {…}, tld: Array(1), cca2: 'DO', ccn3: '214', cca3: 'DOM', …}
+165
+: 
+{name: {…}, tld: Array(1), cca2: 'AT', ccn3: '040', cca3: 'AUT', …}
+166
+: 
+{name: {…}, tld: Array(1), cca2: 'LU', ccn3: '442', cca3: 'LUX', …}
+167
+: 
+{name: {…}, tld: Array(1), cca2: 'GE', ccn3: '268', cca3: 'GEO', …}
+168
+: 
+{name: {…}, tld: Array(1), cca2: 'SK', ccn3: '703', cca3: 'SVK', …}
+169
+: 
+{name: {…}, tld: Array(1), cca2: 'NO', ccn3: '578', cca3: 'NOR', …}
+170
+: 
+{name: {…}, tld: Array(2), cca2: 'TH', ccn3: '764', cca3: 'THA', …}
+171
+: 
+{name: {…}, tld: Array(1), cca2: 'IO', ccn3: '086', cca3: 'IOT', …}
+172
+: 
+{name: {…}, tld: Array(1), cca2: 'IN', ccn3: '356', cca3: 'IND', …}
+173
+: 
+{name: {…}, tld: Array(2), cca2: 'MA', ccn3: '504', cca3: 'MAR', …}
+174
+: 
+{name: {…}, tld: Array(1), cca2: 'PM', ccn3: '666', cca3: 'SPM', …}
+175
+: 
+{name: {…}, tld: Array(1), cca2: 'GL', ccn3: '304', cca3: 'GRL', …}
+176
+: 
+{name: {…}, tld: Array(1), cca2: 'NI', ccn3: '558', cca3: 'NIC', …}
+177
+: 
+{name: {…}, tld: Array(2), cca2: 'QA', ccn3: '634', cca3: 'QAT', …}
+178
+: 
+{name: {…}, tld: Array(3), cca2: 'TW', ccn3: '158', cca3: 'TWN', …}
+179
+: 
+{name: {…}, tld: Array(1), cca2: 'BR', ccn3: '076', cca3: 'BRA', …}
+180
+: 
+{name: {…}, tld: Array(1), cca2: 'NZ', ccn3: '554', cca3: 'NZL', …}
+181
+: 
+{name: {…}, tld: Array(3), cca2: 'SG', ccn3: '702', cca3: 'SGP', …}
+182
+: 
+{name: {…}, tld: Array(2), cca2: 'SY', ccn3: '760', cca3: 'SYR', …}
+183
+: 
+{name: {…}, tld: Array(1), cca2: 'BZ', ccn3: '084', cca3: 'BLZ', …}
+184
+: 
+{name: {…}, tld: Array(1), cca2: 'FK', ccn3: '238', cca3: 'FLK', …}
+185
+: 
+{name: {…}, tld: Array(1), cca2: 'VE', ccn3: '862', cca3: 'VEN', …}
+186
+: 
+{name: {…}, tld: Array(1), cca2: 'BH', ccn3: '048', cca3: 'BHR', …}
+187
+: 
+{name: {…}, tld: Array(1), cca2: 'CC', ccn3: '166', cca3: 'CCK', …}
+188
+: 
+{name: {…}, tld: Array(1), cca2: 'MP', ccn3: '580', cca3: 'MNP', …}
+189
+: 
+{name: {…}, tld: Array(1), cca2: 'CM', ccn3: '120', cca3: 'CMR', …}
+190
+: 
+{name: {…}, tld: Array(1), cca2: 'CY', ccn3: '196', cca3: 'CYP', …}
+191
+: 
+{name: {…}, tld: Array(1), cca2: 'US', ccn3: '840', cca3: 'USA', …}
+192
+: 
+{name: {…}, tld: Array(1), cca2: 'AO', ccn3: '024', cca3: 'AGO', …}
+193
+: 
+{name: {…}, tld: Array(1), cca2: 'TN', ccn3: '788', cca3: 'TUN', …}
+194
+: 
+{name: {…}, tld: Array(1), cca2: 'MC', ccn3: '492', cca3: 'MCO', …}
+195
+: 
+{name: {…}, tld: Array(1), cca2: 'RW', ccn3: '646', cca3: 'RWA', …}
+196
+: 
+{name: {…}, tld: Array(1), cca2: 'TT', ccn3: '780', cca3: 'TTO', …}
+197
+: 
+{name: {…}, tld: Array(1), cca2: 'MT', ccn3: '470', cca3: 'MLT', …}
+198
+: 
+{name: {…}, tld: Array(1), cca2: 'MX', ccn3: '484', cca3: 'MEX', …}
+199
+: 
+{name: {…}, tld: Array(1), cca2: 'YT', ccn3: '175', cca3: 'MYT', …}
+[200 … 249]
+200
+: 
+{name: {…}, tld: Array(1), cca2: 'AG', ccn3: '028', cca3: 'ATG', …}
+201
+: 
+{name: {…}, tld: Array(1), cca2: 'TK', ccn3: '772', cca3: 'TKL', …}
+202
+: 
+{name: {…}, tld: Array(2), cca2: 'KR', ccn3: '410', cca3: 'KOR', …}
+203
+: 
+{name: {…}, tld: Array(1), cca2: 'NE', ccn3: '562', cca3: 'NER', …}
+204
+: 
+{name: {…}, tld: Array(1), cca2: 'AL', ccn3: '008', cca3: 'ALB', …}
+205
+: 
+{name: {…}, tld: Array(1), cca2: 'SO', ccn3: '706', cca3: 'SOM', …}
+206
+: 
+{name: {…}, tld: Array(1), cca2: 'LR', ccn3: '430', cca3: 'LBR', …}
+207
+: 
+{name: {…}, tld: Array(1), cca2: 'MM', ccn3: '104', cca3: 'MMR', …}
+208
+: 
+{name: {…}, tld: Array(1), cca2: 'TZ', ccn3: '834', cca3: 'TZA', …}
+209
+: 
+{name: {…}, tld: Array(1), cca2: 'IQ', ccn3: '368', cca3: 'IRQ', …}
+210
+: 
+{name: {…}, tld: Array(1), cca2: 'GS', ccn3: '239', cca3: 'SGS', …}
+211
+: 
+{name: {…}, tld: Array(1), cca2: 'VC', ccn3: '670', cca3: 'VCT', …}
+212
+: 
+{name: {…}, tld: Array(1), cca2: 'LY', ccn3: '434', cca3: 'LBY', …}
+213
+: 
+{name: {…}, tld: Array(1), cca2: 'SL', ccn3: '694', cca3: 'SLE', …}
+214
+: 
+{name: {…}, tld: Array(1), cca2: 'SX', ccn3: '534', cca3: 'SXM', …}
+215
+: 
+{name: {…}, tld: Array(2), cca2: 'RS', ccn3: '688', cca3: 'SRB', …}
+216
+: 
+{name: {…}, tld: Array(2), cca2: 'HM', ccn3: '334', cca3: 'HMD', …}
+217
+: 
+{name: {…}, tld: Array(1), cca2: 'GH', ccn3: '288', cca3: 'GHA', …}
+218
+: 
+{name: {…}, tld: Array(1), cca2: 'SS', ccn3: '728', cca3: 'SSD', …}
+219
+: 
+{name: {…}, tld: Array(1), cca2: 'SE', ccn3: '752', cca3: 'SWE', …}
+220
+: 
+{name: {…}, tld: Array(1), cca2: 'GR', ccn3: '300', cca3: 'GRC', …}
+221
+: 
+{name: {…}, tld: Array(1), cca2: 'FO', ccn3: '234', cca3: 'FRO', …}
+222
+: 
+{name: {…}, tld: Array(1), cca2: 'PH', ccn3: '608', cca3: 'PHL', …}
+223
+: 
+{name: {…}, tld: Array(1), cca2: 'GW', ccn3: '624', cca3: 'GNB', …}
+224
+: 
+{name: {…}, tld: Array(2), cca2: 'SA', ccn3: '682', cca3: 'SAU', …}
+225
+: 
+{name: {…}, tld: Array(1), cca2: 'PW', ccn3: '585', cca3: 'PLW', …}
+226
+: 
+{name: {…}, tld: Array(1), cca2: 'BG', ccn3: '100', cca3: 'BGR', …}
+227
+: 
+{name: {…}, tld: Array(1), cca2: 'NR', ccn3: '520', cca3: 'NRU', …}
+228
+: 
+{name: {…}, tld: Array(1), cca2: 'KH', ccn3: '116', cca3: 'KHM', …}
+229
+: 
+{name: {…}, tld: Array(1), cca2: 'JE', ccn3: '832', cca3: 'JEY', …}
+230
+: 
+{name: {…}, tld: Array(2), cca2: 'PS', ccn3: '275', cca3: 'PSE', …}
+231
+: 
+{name: {…}, tld: Array(1), cca2: 'IT', ccn3: '380', cca3: 'ITA', …}
+232
+: 
+{name: {…}, tld: Array(1), cca2: 'ML', ccn3: '466', cca3: 'MLI', …}
+233
+: 
+{name: {…}, tld: Array(2), cca2: 'IR', ccn3: '364', cca3: 'IRN', …}
+234
+: 
+{name: {…}, tld: Array(1), cca2: 'NU', ccn3: '570', cca3: 'NIU', …}
+235
+: 
+{name: {…}, tld: Array(1), cca2: 'TJ', ccn3: '762', cca3: 'TJK', …}
+236
+: 
+{name: {…}, cca2: 'XK', cca3: 'UNK', cioc: 'KOS', status: 'user-assigned', …}
+237
+: 
+{name: {…}, tld: Array(2), cca2: 'SH', ccn3: '654', cca3: 'SHN', …}
+238
+: 
+{name: {…}, tld: Array(1), cca2: 'NF', ccn3: '574', cca3: 'NFK', …}
+239
+: 
+{name: {…}, tld: Array(1), cca2: 'OM', ccn3: '512', cca3: 'OMN', …}
+240
+: 
+{name: {…}, tld: Array(1), cca2: 'SV', ccn3: '222', cca3: 'SLV', …}
+241
+: 
+{name: {…}, tld: Array(1), cca2: 'LB', ccn3: '422', cca3: 'LBN', …}
+242
+: 
+{name: {…}, tld: Array(1), cca2: 'VA', ccn3: '336', cca3: 'VAT', …}
+243
+: 
+{name: {…}, tld: Array(1), cca2: 'EC', ccn3: '218', cca3: 'ECU', …}
+244
+: 
+{name: {…}, tld: Array(1), cca2: 'GU', ccn3: '316', cca3: 'GUM', …}
+245
+: 
+{name: {…}, tld: Array(1), cca2: 'HR', ccn3: '191', cca3: 'HRV', …}
+246
+: 
+{name: {…}, tld: Array(1), cca2: 'SB', ccn3: '090', cca3: 'SLB', …}
+247
+: 
+{name: {…}, tld: Array(1), cca2: 'HN', ccn3: '340', cca3: 'HND', …}
+248
+: 
+{name: {…}, tld: Array(1), cca2: 'CX', ccn3: '162', cca3: 'CXR', …}
+249
+: 
+{name: {…}, tld: Array(1), cca2: 'PR', ccn3: '630', cca3: 'PRI', …}
+length
+: 
+250
+[[Prototype]]
+: 
+Array(0)
+
